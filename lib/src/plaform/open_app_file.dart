@@ -53,7 +53,7 @@ class OpenAppFile {
       result = mac.system(['open', if (locate) '-R', '$filePath']);
     } else if (Platform.isLinux) {
       var filePathLinux = Uri.file(filePath);
-      result = linux.system(['xdg-open', filePathLinux.toString()]);
+      result = linux.system(['xdg-open', '"${filePathLinux.toString()}"']);
     } else if (Platform.isWindows) {
       final windowsResult = windows.shellExecute('open', filePath);
       errorExtra = ': HINSTANCE=$windowsResult';
