@@ -23,8 +23,8 @@ flutter:
       web:
         default_package: open_app_file
       windows:
-        default_package: open_app_file
+        dartPluginClass: OpenAppFilePlugin
       linux:
-        default_package: open_app_file
+        dartPluginClass: OpenAppFilePlugin
       macos:
-        default_package: open_app_file
+        dartPluginClass: OpenAppFilePlugin
